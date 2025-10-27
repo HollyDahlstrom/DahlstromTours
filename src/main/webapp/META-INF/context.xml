@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/DahlstromTours">
+    <Resource 
+        name="jdbc/tour_site_db" 
+        auth="Container" 
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+        driverClassName="com.mysql.cj.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/tour_site_db?useSSL=false&amp;serverTimezone=UTC"
+        username="root"
+        password="Karlskoga123!"
+        maxActive="20"
+        maxIdle="10"
+        maxWait="-1"
+    />
+</Context>
