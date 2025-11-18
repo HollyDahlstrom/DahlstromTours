@@ -10,6 +10,29 @@ import jakarta.servlet.http.*;
 import java.io.IOException;
 import java.util.Map;
 
+/**
+ * CheckoutServlet.java - DahlstromTours
+ * @author Holly Dahlstrom
+ * @date 11/17/25
+ *
+ * The CheckoutServlet handles requests related to the checkout process
+ * in the DahlstromTours web application.
+ *
+ * doGet:
+ *   - Redirects users to the checkout.jsp page when they visit /checkout.
+ *
+ * doPost:
+ *   - Retrieves the user's cart and billing information from the session and request.
+ *   - Validates that the cart is not empty and billing info is provided correctly.
+ *   - Ensures the user is logged in before placing an order.
+ *   - Calculates the total price based on cart items and their quantities.
+ *   - Inserts the order and its items into the database using OrderDB.
+ *   - Forwards the user to order-confirmation.jsp with order details.
+ *   - Clears the cart and quantities from the session after processing.
+ *
+ * This servlet ensures a smooth and secure checkout process with proper
+ * validation and order tracking for users.
+ */
 @WebServlet("/checkout")
 public class CheckoutServlet extends HttpServlet {
 

@@ -1,7 +1,8 @@
 <%-- 
-    Document   : footer
-    Created on : Oct 16, 2025, 2:40:19?PM
-    Author     : Holly
+    File        : footer.jsp
+    Description : Footer section for How Swede Guided Tours Abroad website.
+    Author      : Holly Dahlstrom
+    Created     : 11-18-2025
 --%>
 
 <footer class="text-center mt-5 p-3 bg-light">

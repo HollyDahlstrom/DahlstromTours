@@ -1,3 +1,24 @@
+/**
+ * OrderDB.java - DahlstromTours
+ * This class handles inserting customer orders and their associated items into the database.
+ * It is responsible for creating a new order record in the 'orders' table and inserting
+ * corresponding entries in the 'order_items' table.
+ *
+ * Methods:
+ *   - insertOrder(int userId, double totalPrice, cart, quantities):
+ *       Inserts a new order for a specific user, including all tours in the cart with their
+ *       respective quantities and prices. Returns the generated order ID if successful,
+ *       or -1 if the insertion failed.
+ *
+ * Database Handling:
+ *   Uses DBUtil.getConnection() to connect to the database.
+ *   Transactions are used to ensure atomicity: if any insertion fails, the transaction
+ *   is rolled back to prevent partial order data.
+ *
+ * Error Handling:
+ *   Prints messages to standard error if an SQL exception occurs or insertion fails.
+ */
+
 package murach.DB;
 
 import murach.T.Tour;
@@ -18,6 +39,7 @@ public class OrderDB {
      * @param userId the ID of the user placing the order
      * @param totalPrice the total amount of the order
      * @param cart the cart containing selected tours
+     * @param quantities the total number of each tour
      * @return the generated order ID if successful, or -1 if insertion failed
      */
     public static int insertOrder(int userId, double totalPrice, Map<String, Tour> cart, Map<String, Integer> quantities) {

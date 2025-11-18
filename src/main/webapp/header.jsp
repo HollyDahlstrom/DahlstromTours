@@ -1,7 +1,10 @@
 <%-- 
-    Document   : header
-    Created on : Oct 16, 2025, 2:33:17â¯PM
-    Author     : Holly
+    File: header.jsp
+    Author: Holly Dahlstrom
+    Created: 11/18/2025
+    Description: Shared site-wide header and navigation bar for How Swede Guided 
+                 Tours Abroad. Includes Bootstrap styling, JSTL logic for user 
+                 greetings, cart summary display, and responsive navigation links.
 --%>
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>

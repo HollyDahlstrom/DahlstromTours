@@ -6,6 +6,25 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 import java.io.IOException;
 
+/**
+ * ContactServlet.java - DahlstromTours
+ * @author Holly Dahlstrom
+ * @date 11/17/25
+ *
+ * The ContactServlet handles requests submitted through the Contact Us
+ * form in the DahlstromTours web application.
+ *
+ * When a POST request is received, this servlet:
+ *  1. Retrieves the user's name, email, and message from the request.
+ *  2. Validates the input to ensure all fields are filled and the email
+ *     contains a valid format.
+ *  3. Inserts the message into the database using ContactDB.
+ *  4. Sets success or error messages as request attributes and forwards
+ *     the user back to contact.jsp.
+ *
+ * This servlet ensures that user messages are properly validated and stored
+ * while providing feedback on the submission status.
+ */
 @WebServlet("/contact-us")
 public class ContactServlet extends HttpServlet {
 

@@ -1,3 +1,18 @@
+/* 
+ * File: style.css
+ * Author: Holly Dahlstrom
+ * Created: 11/17/25
+ * Project: DahlstromTours Web Application
+ * Description: Global and component-specific CSS styles for the DahlstromTours web app. 
+ *              Includes layout, typography, navigation, hero section, buttons, forms, 
+ *              cards, and footer styling to ensure a consistent look and feel across the site.
+ * Notes:
+ *   - Uses modern fonts (Segoe UI, Poppins) for readability and design consistency.
+ *   - Hero section has a gradient background with text shadows for emphasis.
+ *   - Buttons, cards, and navbar customized to match site branding.
+ *   - Responsive and flexible container and card layouts for different screen sizes.
+ */
+
 /* Global styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

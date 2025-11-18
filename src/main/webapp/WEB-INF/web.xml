@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : web.xml
+    Description: Web application configuration for DahlstromTours
+                 Sets session timeout and other web app parameters
+    Author     : Holly Dahlstrom
+    Created    : 11-18-2025
+-->
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"

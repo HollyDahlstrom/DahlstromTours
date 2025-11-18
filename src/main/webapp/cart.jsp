@@ -1,3 +1,10 @@
+<%-- 
+    File        : cart.jsp
+    Description : Displays cart contents, allows quantity updates and item removal.
+    Author      : Holly Dahlstrom
+    Created     : 11-18-2025
+--%>
+
 <%@ include file="header.jsp" %>
 <%@ page import="java.util.Map" %>
 <%@ page import="murach.T.Tour" %>

@@ -1,7 +1,8 @@
 <%-- 
-    Document   : about
-    Created on : Oct 16, 2025, 3:35:23?PM
-    Author     : Holly
+    File        : about.jsp
+    Description : Provides information about How Swede Guided Tours Abroad, mission, and services.
+    Author      : Holly Dahlstrom
+    Created     : 11-18-2025
 --%>
 
 <%@ include file="header.jsp" %>

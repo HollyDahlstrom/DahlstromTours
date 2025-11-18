@@ -1,3 +1,10 @@
+<%-- 
+    File        : checkout.jsp
+    Description : Displays cart summary and billing form for final order placement.
+    Author      : Holly Dahlstrom
+    Created     : 11-18-2025
+--%>
+
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ include file="header.jsp" %>
 <%@ page import="java.util.Map" %>

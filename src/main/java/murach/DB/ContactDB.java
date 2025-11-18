@@ -1,3 +1,24 @@
+/**
+ * ContactDB.java - DahlstromTours
+ * Handles database operations related to contact messages submitted
+ * by users through the "Contact Us" form.
+ *
+ * Functionality:
+ *   - insertMessage(String name, String email, String message)
+ *     saves a new contact message into the contact_message table.
+ *
+ * Database Connection:
+ *   - Uses DBUtil.getConnection() to obtain a database connection
+ *     from the connection pool.
+ *
+ * Error Handling:
+ *   - Prints an error message if an SQLException occurs during insertion.
+ *   - Returns true if insertion succeeds, false otherwise.
+ *
+ * Usage:
+ *   Called by ContactServlet when a user submits the contact form.
+ */
+
 package murach.DB;
 
 import java.sql.*;

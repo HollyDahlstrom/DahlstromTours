@@ -1,7 +1,8 @@
 <%-- 
-    Document   : all-tours
-    Created on : Oct 16, 2025, 2:38:22?PM
-    Author     : Holly
+    File        : all-tours.jsp
+    Description : Displays all available tours with options to add to cart or view details.
+    Author      : Holly Dahlstrom
+    Created     : 11-18-2025
 --%>
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>

@@ -7,6 +7,29 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 import java.io.IOException;
 
+/**
+ * LoginServlet.java - DahlstromTours
+ * @author Holly Dahlstrom
+ * @date 11/17/25
+ *
+ * The LoginServlet manages both login and logout functionality for
+ * the DahlstromTours web application. It handles user authentication,
+ * session creation, and session invalidation, depending on the
+ * requested action.
+ *
+ * POST Requests:
+ *  - action="login": Validates user credentials using UserDB.
+ *      - On success: stores the User object in the session and
+ *        redirects to the homepage.
+ *      - On failure: returns the user to the login page with an error message.
+ *
+ * GET Requests:
+ *  - action="logout": Invalidates the user's session and redirects to the homepage.
+ *  - Any other GET action loads the login page.
+ *
+ * This servlet ensures that user session data is securely managed and
+ * that login/logout workflows operate smoothly throughout the site.
+ */
 @WebServlet("/login-logout")
 public class LoginServlet extends HttpServlet {
 

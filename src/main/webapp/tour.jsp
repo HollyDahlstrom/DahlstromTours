@@ -1,7 +1,9 @@
 <%-- 
-    Document   : tour
-    Created on : Oct 16, 2025, 12:58:51?PM
-    Author     : Holly
+    Document   : tour.jsp
+    Created on : 11-17-2025
+    Author     : Holly Dahlstrom
+    Description: Displays the details of a single tour, including image, name,
+                 price, description, and buttons to add to cart or go back to all tours.
 --%>
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>

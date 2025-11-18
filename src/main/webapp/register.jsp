@@ -1,7 +1,11 @@
 <%-- 
-    Document   : register
-    Created on : Oct 17, 2025, 10:49:12 AM
-    Author     : Holly
+    File: register.jsp
+    Created on: 11-18-2025
+    Author: Holly Dahlstrom
+    Description: Registration page allowing new users to create an account.
+                 Displays success or error messages and submits form data 
+                 to the RegisterServlet for processing. Includes Bootstrap 
+                 styling and JSTL for conditional message display.
 --%>
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>

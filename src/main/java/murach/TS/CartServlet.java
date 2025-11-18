@@ -11,6 +11,30 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * CartServlet.java - DahlstromTours
+ * @author Holly Dahlstrom
+ * @date 11/17/25
+ *
+ * The CartServlet handles the shopping cart functionality for the DahlstromTours web application.
+ * Users can add, update, or remove tours from their cart. The servlet also ensures that only
+ * logged-in users can modify their cart.
+ *
+ * doPost:
+ *   - Retrieves the logged-in user from the session; if not logged in, redirects to login.jsp with a message.
+ *   - Retrieves or initializes the user's cart and quantity maps from the session.
+ *   - Processes "add", "update", or "remove" actions for tours based on request parameters:
+ *       - add: Adds a tour to the cart or increments the quantity if already in cart.
+ *       - update: Updates the quantity of a tour or removes it if the quantity is zero or less.
+ *       - remove: Removes a tour from the cart and quantity map.
+ *   - Updates the cart in the session and redirects back to cart.jsp.
+ *
+ * doGet:
+ *   - Forwards the request to cart.jsp to display the current contents of the user's cart.
+ *
+ * This servlet ensures that cart operations are properly tracked in the user's session and
+ * reflects the latest quantities and selections for checkout.
+ */
 @WebServlet("/cart")
 public class CartServlet extends HttpServlet {
 

@@ -1,3 +1,13 @@
+<%-- 
+    File: orderConfirmation.jsp
+    Author: Holly Dahlstrom
+    Created: 11/18/2025
+    Description: Displays order confirmation details after a successful purchase.
+                 Shows order ID, total price, and a breakdown of purchased tours
+                 including quantity and line totals. Uses data passed from the 
+                 CheckoutServlet and formats output for user-friendly display.
+--%>
+
 <%@ include file="header.jsp" %>
 <%@ page import="murach.T.Tour" %>
 <%@ page import="java.util.Collection" %>

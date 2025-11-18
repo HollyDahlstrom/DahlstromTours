@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : context.xml
+    Description: Context configuration for DahlstromTours
+                 Defines the JNDI DataSource for the tour_site_db database
+    Author     : Holly Dahlstrom
+    Created    : 11-18-2025
+-->
 <Context path="/DahlstromTours">
     <Resource 
         name="jdbc/tour_site_db" 

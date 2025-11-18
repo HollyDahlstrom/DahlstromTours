@@ -1,7 +1,8 @@
 <%-- 
-    Document   : contact
-    Created on : Oct 16, 2025, 2:37:30?PM
-    Author     : Holly
+    File        : contact.jsp
+    Description : Contact page allowing users to send a message.
+    Author      : Holly Dahlstrom
+    Created     : 11-18-2025
 --%>
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>

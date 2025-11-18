@@ -1,3 +1,11 @@
+<%-- 
+    Document   : tour-details.jsp
+    Created on : 11-17-2025
+    Author     : Holly Dahlstrom
+    Description: Displays the full details of a selected tour, including name, image,
+                 price, full description, and options to book the tour or return to all tours.
+--%>
+
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ include file="header.jsp" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>

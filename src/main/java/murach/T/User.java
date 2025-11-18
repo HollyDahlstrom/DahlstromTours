@@ -1,3 +1,26 @@
+/**
+ * User.java - DahlstromTours
+ * 
+ * Represents a user of the DahlstromTours web application.
+ * This class contains user information such as email, hashed password,
+ * first and last names, and a unique user ID.
+ * 
+ * Constructors:
+ *   - User(int userId, String email, String passwordHash, String firstName, String lastName):
+ *       Used when fetching an existing user from the database, including their ID.
+ *   - User(String email, String passwordHash, String firstName, String lastName):
+ *       Used when creating a new user for registration (userId is not yet assigned).
+ * 
+ * Getters:
+ *   - getUserId(): Returns the user's unique ID.
+ *   - getEmail(): Returns the user's email address.
+ *   - getPasswordHash(): Returns the user's hashed password.
+ *   - getFirstName(): Returns the user's first name.
+ *   - getLastName(): Returns the user's last name.
+ * 
+ * This class is primarily used for handling user registration, login, and session management.
+ */
+
 package murach.T;
 
 public class User {

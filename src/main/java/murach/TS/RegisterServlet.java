@@ -7,6 +7,21 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 import java.io.IOException;
 
+/**
+ * RegisterServlet.java - DahlstromTours
+ * @author Holly Dahlstrom
+ * @date 11/17/25
+ *
+ * The RegisterServlet handles user registration requests for the
+ * DahlstromTours web application. It collects user information from
+ * the registration form, creates a new User object, and attempts to
+ * insert that user into the database through UserDB.
+ *
+ * If registration is successful, the servlet forwards the user to the
+ * login page with a success message. If registration fails, typically due
+ * to an existing email, an error message is displayed and the user is
+ * returned to the registration form.
+ */
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
 
@@ -19,7 +34,6 @@ public class RegisterServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        // ✅ Correct parameter order: email, passwordHash, firstName, lastName
         boolean success = UserDB.insertUser(new User(email, password, firstName, lastName));
 
         if (success) {

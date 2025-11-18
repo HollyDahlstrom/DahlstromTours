@@ -1,3 +1,26 @@
+/**
+ * TourDB.java - DahlstromTours
+ * This class handles database operations related to tours in the DahlstromTours web application.
+ * It provides methods for fetching all tours or a single tour by its ID from the database.
+ *
+ * Methods:
+ *   - selectAllTours():
+ *       Retrieves all tours from the database. Each tour includes its ID, name, country, price,
+ *       description, and image URL. Returns a List of Tour objects.
+ *
+ *   - selectTour(String tourId):
+ *       Retrieves a single tour based on the provided tour ID. The returned Tour object includes
+ *       the tour's ID, name, country, price, short and full description, and image URL. Returns null
+ *       if no tour is found.
+ *
+ * Database Handling:
+ *   Uses DBUtil.getConnection() for establishing a connection to the MySQL database.
+ *   Employs try-with-resources to ensure all database resources (Connection, PreparedStatement, ResultSet) are properly closed.
+ *
+ * Error Handling:
+ *   Prints error messages to standard error if any SQLException occurs.
+ */
+
 package murach.DB;
 
 import murach.T.Tour;

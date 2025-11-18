@@ -1,3 +1,29 @@
+/**
+ * UserDB.java - DahlstromTours
+ * This class handles database operations related to users in the DahlstromTours web application.
+ * It provides methods for validating user login credentials and inserting new users into the database.
+ *
+ * Methods:
+ *   - validateUser(String email, String password):
+ *       Queries the database for a user with the provided email. 
+ *       If a matching record is found and the password matches, returns a User object. 
+ *       Otherwise, returns null.
+ *
+ *   - insertUser(User user):
+ *       Inserts a new user record into the database with the user's first name, last name, email, and password hash.
+ *       Returns true if the insertion was successful, false otherwise.
+ *
+ * Database Handling:
+ *   Uses DBUtil.getConnection() for establishing a connection to the MySQL database.
+ *   Employs try-with-resources to ensure all database resources are properly closed.
+ *
+ * Error Handling:
+ *   Prints error messages to standard error if any SQLException occurs.
+ *
+ * Note:
+ *   Passwords are stored and compared using password hashes.
+ */
+
 package murach.DB;
 
 import murach.T.User;

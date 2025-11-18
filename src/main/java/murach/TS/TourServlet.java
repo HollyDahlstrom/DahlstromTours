@@ -7,6 +7,15 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 import java.io.IOException;
 
+/**
+ * TourServlet.java - DahlstromTours
+ * @author Holly Dahlstrom
+ * @date 11/17/25
+ * 
+ * TourServlet handles requests for viewing a specific tour's details.
+ * It retrieves the tour based on the provided ID and forwards the data
+ * to the tour-details.jsp page.
+ */
 @WebServlet("/tour-details")
 public class TourServlet extends HttpServlet {
     @Override

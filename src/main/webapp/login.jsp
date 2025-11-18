@@ -1,3 +1,13 @@
+<%-- 
+    File: login.jsp
+    Author: Holly Dahlstrom
+    Created: 11/18/2025
+    Description: Displays the user login form and handles login-related messages.
+                 Shows success messages after registration, login errors, and
+                 warning messages if the user was redirected from the cart or
+                 checkout pages. Form submits to the LoginLogoutServlet.
+--%>
+
 <%@ include file="header.jsp" %>
 
 <%

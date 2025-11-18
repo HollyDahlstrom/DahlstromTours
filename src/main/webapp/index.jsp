@@ -1,7 +1,10 @@
 <%-- 
-    Document   : index
-    Created on : Oct 16, 2025, 2:39:10?PM
-    Author     : Holly
+    File: index.jsp
+    Author: Holly Dahlstrom
+    Created: 11/18/2025
+    Description: Homepage for How Swede Guided Tours. Displays the hero section,
+                 promotional messaging, and a carousel of featured tours to 
+                 encourage users to explore available travel packages.
 --%>
 
 <%@ include file="header.jsp" %>
